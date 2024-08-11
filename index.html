@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="main.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Meow+Script&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+</head>
+<body>
+<main>
+    <header class="bg-blend-multiply bg-blue-400 bg-[url('https://images.pexels.com/photos/7293100/pexels-photo-7293100.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')] bg-cover flex flex-col gap-10 min-h-80 p-20 md:p-10 sm:p-5">
+       <div class="flex flex-col md:flex-row justify-between text-white  rounded items-center">
+        
+        <h1 class="text-white text-4xl md:text-3xl sm:text-2xl"><span class="text-yellow-500">Safe<span class="font-bold">Africa!</span></h1>
+        <nav>
+            
+            <ul class="flex justify-between gap-4 uppercase text-sm md:flex-row sm:flex-col sm:items-start">
+                <li><a href="" class="hover:text-white hover:bg-orange-400 hover:rounded p-1">Home</a></li>
+                <li><a href="" class="hover:text-white hover:bg-orange-400 hover:rounded p-1">About</a></li>
+                <li><a href="" class="hover:text-white hover:bg-orange-400 hover:rounded p-1">What we do</a></li>
+                <li><a href="" class="hover:text-white hover:bg-orange-400 hover:rounded p-1">Our Causes</a></li>
+                <li><a href="" class="hover:text-white hover:bg-orange-400 hover:rounded p-1">Contact</a></li>
+            </ul>
+        </nav>
+
+        <a href="" class="bg-orange-500 px-4 py-2 rounded md:mt-0 sm:mt-4">GIVE TODAY</a>
+       </div>
+     <div>
+          
+        <div class="max-w-[500px] bg-gray-800/40 p-5 text-white md:max-w-full sm:p-3">
+            <h1 class="text-3xl text-white font-bold text-align: justify;">Supporting the undervalued</h1>
+            <p class="mb-5 font-light text-lg">
+                Our mission is to protect and restore the environment through community engagement, education, and advocacy. We work to reduce the impact of climate change, promote sustainable practices, and empower individuals and organizations to take meaningful action for the preservation of our natural resources.
+            </p>
+            <a href="" class="bg-orange-500 text-white font-medium rounded px-4 py-1">Support us today!</a>
+           </div>
+    
+           <div id="container" class="z-10 h-[400px] bg-gray-700/50 text-white p-20 flex flex-col gap-10 md:p-10 sm:p-5">
+            <h4 class="text-5xl font-bold md:text-4xl sm:text-3xl">
+                Our causes are in need of help!
+            </h4>
+            <p class="text-lg font-light md:text-base sm:text-sm">
+                Imagine a world where every child, regardless of their background, has the opportunity to dream big and achieve their goals. At SafeAfrica, we believe that education is the key to unlocking these dreams and creating a brighter future for all.
+            </p>
+          <div>
+            <p class="text-xl" style="font-family: 'Meow Script', cursive;">
+                Bari-Abdul-Manaf
+            </p>
+            <p>Bari Abdul-Manaf</p>
+          </div>
+            </div>
+     </div>  
+
+    </div>
+    <p class="text-white text-xs">&copy; 2024 All Rights Reserved. Powered by <a target="_blank" href="https://skyfusion.dev">Skyfusion</a></p>
+
+    </header>
+</main>
+
+<footer>
+</footer>
+<script>
+    // JavaScript for responsive menu
+    const navLinks = document.querySelectorAll('nav a');
+    const navMenu = document.querySelector('nav ul');
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.toggle('show');
+      });
+    });
+
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 768) {
+        navMenu.classList.remove('show');
+      }
+    });
+  </script>
+</body>
+</html>
